@@ -1,0 +1,230 @@
+
+
+*,
+::before,
+::after {
+	box-sizing: border-box;
+	/* 1 */
+	border-width: 0;
+	/* 2 */
+	border-style: solid;
+	/* 2 */
+	border-color: #e5e7eb;
+	/* 2 */
+}
+:root {
+    --white: #fafafb;
+    --purple:#000000;
+    --blue-light:#3b7db3;
+    --blue-dark:#1b2d36;
+    --green: #757575;
+ 
+ }
+body {
+    
+	height: 100vh;
+    background: linear-gradient(to bottom,var(--purple),var(--blue-light));
+    height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    margin: 0;
+  font-family: "Teko", sans-serif;
+
+}
+.titulo {
+	font-size: 2.5rem;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	margin: 30px 0;
+    border-radius: 1rem;
+	color: #e5e7eb;
+    
+}
+
+
+#caja-tareas {
+    
+
+	border-radius: 1rem;
+	display: inline-block;
+	width: 40vh;
+
+}
+
+
+form {
+	display: flex;
+	
+	padding: 20px;
+	gap: 1rem;
+}
+
+#input-tarea {
+	border: 2px solid rgb(71, 85, 105);
+	background-color: rgb(255, 255, 255);
+	border-radius: 0.3rem;
+	font-size: 0.8rem;
+	font-family: "Poppins", sans-serif;
+	padding: 0.3rem;
+	width: 100%;
+
+}
+
+#boton-agregar {
+	width: 2rem;
+	height: 2rem;
+	padding: 0.25rem;
+	color: #ffffff;
+	background-color: rgb(139, 92, 246);
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+#boton-agregar:hover {
+	background-color: rgb(98, 61, 184);
+}
+
+#icono-agregar {
+	display: flex;
+	color: #ffffff;
+	justify-content: center;
+	align-items: center;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+
+
+#lista-tareas {
+    padding: 1rem;
+    border-radius: 10px;
+	height: 15rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+    background-color: #0958f815;
+}
+
+
+#lista {
+	padding: 0;
+	margin: 0%;
+}
+.tareas {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid  rgba(255, 248, 248, 0.151);
+}
+
+
+#icono-eliminar {
+	height: 2.5rem;
+	width: 2.5rem;
+	justify-content: space-between;
+	color: rgb(238, 68, 68);
+}
+
+.icono-check {
+	height: 2.5rem;
+	width: 2.5rem;
+	justify-content: space-between;
+	color: rgb(34, 196, 94);
+}
+
+#icono-eliminar:hover {
+	background-color: rgb(238, 68, 68);
+	color: #ffffff;
+}
+.check {
+	background-color: rgb(34, 196, 94);
+	color: #ffffff;
+}
+
+.icono-check:hover {
+	background-color: rgb(34, 196, 94);
+	color: #ffffff;
+}
+
+/* Texto  */
+.tarea-hecha {
+	color: gray;
+	text-decoration: line-through;
+}
+.tarea {
+	margin: 0%;
+	width: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	word-break: break-word;
+	font-size: 0.8rem;
+}
+
+
+#contadores {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	gap: 1rem;
+}
+
+#total {
+	height: 2rem;
+	width: 50%;
+	border-radius: 10px;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	background-color: #7575753d;
+}
+#completas {
+	height: 2rem;
+	width: 50%;
+	border-radius: 10px;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	background-color: rgba(33, 206, 33, 0.342);
+}
+
+#incompletas {
+	height: 2rem;
+	width: 50%;
+	border-radius: 10px;
+	font-family: "Poppins", sans-serif;
+	color: #ffffff;
+	background-color: #e4000070;
+}
+
+
+
+
+
+@media (min-width: 580px) {
+	#caja-tareas {
+		width: 70vh;
+	}
+	#contadores {
+		flex-direction: row;
+		gap: 2rem;
+	}
+	#total {
+		width: auto;
+	}
+	#completas {
+		width: auto;
+	}
+	#incompletas {
+		width: auto;
+	}
+
+	.tarea{
+		width: 20rem;
+		font-size: 1.5rem;
+	}
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>To Do App</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kode+Mono:wght@400..700&family=Poppins:wght@500&family=Roboto&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+
+	<h1 class="titulo">Lista de Tareas</h1>
+		
+		<div id="caja-tareas">
+			
+				<form action="" id="form">
+					<input id="input-tarea" placeholder="Add new task..." />
+				<button type="submit" id="boton-agregar">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+ 					id="icono-agregar"> <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+				</button>
+				</form>
+				
+			
+			<div id="lista-tareas">
+				<ul id="lista">
+				
+				</ul>
+			</div>
+			
+			<div id="contadores">
+				<button id="total">Total: 0</button>
+				<button id="completas">Completas: 0</button>
+				<button id="incompletas">Incompletas: 0</button>
+			</div>
+			
+		</div>
+		
+
+
+		<script src="index.js"></script> 
+	</body>
+</html>
